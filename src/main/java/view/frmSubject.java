@@ -57,14 +57,14 @@ public class frmSubject {
     }
 
     private void sendMail(){
-        //String name="daniela.cruzp@outlook.com";
-        String name="daniela.cruz16@formacion.edu.sv";
-        //String pass="da24NH11y";//
-        String pass="A18m12y12!";//
-        //String from = "daniela.cruzp@outlook.com";
-        String from = "daniela.cruz16@formacion.edu.sv";
-        //String toEmail = "goregrindcore@live.com";
-        String toEmail = "goregrindcore95@gmail.com";
+        //String name="*****";
+        String name="*****";
+        //String pass="*****";//
+        String pass="*****";//
+        //String from = "*****";
+        String from = "*****";
+        //String toEmail = "g*****";
+        String toEmail = "*****";
         Properties prop = new Properties();
         prop.put("mail.smtp.auth", "true");
         prop.put("mail.smtp.starttls.enable", "true");
@@ -83,7 +83,7 @@ public class frmSubject {
             message.setFrom(new InternetAddress(from));
             message.addRecipient(MimeMessage.RecipientType.TO, new InternetAddress(toEmail));
             message.setSubject("SUBJECT");
-            message.setText("hola, hola y hola y me ces mal");
+            message.setText("hola, hola y hola y me caes mal");
             Transport.send(message);
         } catch (MessagingException e) {
             e.printStackTrace();
