@@ -1,9 +1,12 @@
 package model;
-import lombok.*;
+import lombok.Getter;
+import lombok.Setter;
 
 public class Student {
     @Getter @Setter
+    private int id;
+    @Getter @Setter
     private String name;
     @Getter @Setter
-    private int id;
+    private double grade;
 }
